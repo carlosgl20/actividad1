@@ -1,20 +1,41 @@
-var numero;
 
-function esEntero(numero) {
-    var entero = false;
-    if(numero == parseInt(numero)) {
-        entero = true;
-        }
-        return entero;
+var numero = prompt("Introduce un número entero");
+
+esEntero();
+esPositivo();
+
+alert(sumatorio());
+
+function esEntero() {
+
+    let resultado = false;
+
+    if (parseInt(numero) == numero) 
+    resultado = true;
+    else 
+    console.error("El número introducido no es entero");
+
+    return resultado;
+}
+
+function esPositivo() {
+
+    let resultado = false;
+
+    if(num > 0) 
+    resultado = true;
+    else 
+    console.error("El número introducido no es positivo");
+
+    return resultado;
+}
+
+function sumatorio(){
+
+    let resultado = 0;
+
+    for(let i = 0; i < numero; i ++){
+        resultado += i;
     }
-
-function esPositivo(numero) {
-    var resultado = false;
-    if(numero>=0) {
-        resultado = true;
-        }
-        return resultado;
-    }
-console.error("El número no es positivo, introduce otro");
-
-function sumatorio
+    return resultado;
+}
