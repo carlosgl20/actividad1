@@ -4,7 +4,7 @@ var numero = prompt("Introduce un número entero");
 esEntero();
 esPositivo();
 
-alert(sumatorio());
+alert(suma());
 
 function esEntero() {
 
@@ -30,7 +30,7 @@ function esPositivo() {
     return resultado;
 }
 
-function sumatorio(){
+function suma(){
 
     let resultado = 0;
 
